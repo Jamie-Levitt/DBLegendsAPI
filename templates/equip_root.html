@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBL DB - EQUIPMENT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav id='menu'>
+        <ul>
+            <li><a href='/'>HOME</a></li>
+            <li><a class='active' href='/equipment'>EQUIPMENT</a></li>
+        </ul>
+    </nav>
+
+    <div id="contents">
+        <div class="top-menu">
+            <div class="menu-header">
+                <button id='top-menu-button' class="top-menu-button" onclick="toggleTopMenu();">- FILTERS</button>
+            </div>
+            <div id="menu-contents">
+                <div class="menu-buttons">
+                    <button id="load-equips" onclick="updateEquipDisplay();">RELOAD EQUIPMENT</button>
+                    <button id="new-filter">NEW FILTER</form>
+                </div>
+                <div class="filter-list">
+                </div>
+            </div>
+        </div>
+        <div class="main-contents">
+            <div id="equipment-list">
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/equip_root.js') }}"></script>
+</body>
+</html>
+
+<template id="equipment-list-item">
+    <a class="equip-list-item">
+    <div class="equip-list-item-main">
+        <div class="equip-img-div">
+            <img class="equip-img">
+        </div>
+        <div class="equip-info">
+            <a class="equip-name"></a>
+            <div class="equip-conditions">
+            </div>
+            <div class="equip-stats">
+            </div>
+        </div>
+    </div>
+    </a>
+</template>

@@ -1,0 +1,9 @@
+{
+    "rootURL": "https://dblegends.net",
+    "page_roots": { "ROOT": "/",
+                    "TRAIT": "/traits",
+                    "CHARS_ROOT": "/characters",
+                    "EQUIPS_ROOT": "/equipment",
+                    "EQUIP": "/equip"
+                  }
+}

@@ -1,0 +1,21 @@
+{
+    "TRAIT": { "DATABASE-SOURCE": [
+                           "id INTEGER PRIMARY KEY",
+                           "rarity INT NOT NULL",
+                           "name TEXT NOT NULL",
+                           "desc TEXT NOT NULL",
+                           "img_path TEXT NOT NULL"
+                         ]
+             },
+    "EQUIP": { "DATABASE-SOURCE": [ "id INTEGER PRIMARY KEY",
+                           "name TEXT NOT NULL",
+                           "rarity INT NOT NULL",
+                           "img_path TEXT NOT NULL",
+                           "is_ToP BOOL NOT NULL",
+                           "conditions TEXT",
+                           "effect1 TEXT",
+                           "effect2 TEXT",
+                           "effect3 TEXT"
+                         ]
+             }
+}
